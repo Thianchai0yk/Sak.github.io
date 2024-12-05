@@ -1,0 +1,146 @@
+@import url("https://bootswatch.com/flatly/bootstrap.min.css");
+
+body {
+  padding-top: 50px;
+  margin: 50;
+  padding: 50px;
+
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    background:#ecf0f1;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -40%;
+  }
+
+  .row-offcanvas-left.active {
+    left: 40%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin-left: 12px;
+  }
+}
+
+#sidebar {
+    padding:15px;
+    margin-top:10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.container {
+  background-color: #327dc9;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control, .form-select {
+  margin-bottom: 10px;
+}
+
+.form-range {
+  width: 100%;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.form-range {
+  -webkit-appearance: none; /* ปรับให้ใช้รูปแบบเดียวกันในทุกเบราว์เซอร์ */
+  appearance: none;
+  width: 100%; /* ความกว้างของหลอดเลื่อน */
+  height: 8px; /* ความสูงของหลอดเลื่อน */
+  background: #ddd; /* สีพื้นหลังของแถบหลอดเลื่อน */
+  border-radius: 5px; /* มุมโค้งมน */
+  transition: background 0.3s ease; /* เพิ่มการเปลี่ยนสีเมื่อเคลื่อนที่ */
+}
+
+/* สีของแถบที่ถูกเลื่อน */
+.form-range::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #4caf50; /* สีของแถบที่เต็ม */
+  border-radius: 5px;
+}
+.card-body {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* สร้างเงาแบบนูน */
+}
+
+/* สีของแถบที่เลื่อน */
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ff5722; /* สีของแถบที่เลื่อน */
+  border-radius: 50%; /* ทำให้แถบที่เลื่อนกลม */
+  cursor: pointer; /* เปลี่ยนเป็น pointer เมื่อ hover */
+}
+
+/* สีของแถบที่เต็มในเบราว์เซอร์ Firefox */
+.form-range::-moz-range-progress {
+  background: #4caf50;
+}
+
+/* สีของแถบที่เลื่อนในเบราว์เซอร์ Firefox */
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ff5722;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#result {
+  font-size: 14px;
+  font-weight: bold;
+}
+
